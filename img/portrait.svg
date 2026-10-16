@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="560" viewBox="0 0 400 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="560" fill="url(#bg)"/>
+  <text x="200" y="300" text-anchor="middle" font-family="Georgia, serif" font-size="300" fill="#22d3ee" fill-opacity="0.08">{ }</text>
+  <g font-family="Consolas, 'DejaVu Sans Mono', monospace" font-size="15">
+    <text x="32" y="64"><tspan fill="#67e8f9">.cards</tspan><tspan fill="#cbd5e1"> {</tspan></text>
+    <text x="52" y="92"><tspan fill="#93c5fd">display</tspan><tspan fill="#cbd5e1">: </tspan><tspan fill="#fcd34d">grid</tspan><tspan fill="#cbd5e1">;</tspan></text>
+    <text x="52" y="120"><tspan fill="#93c5fd">grid-template-columns</tspan><tspan fill="#cbd5e1">:</tspan></text>
+    <text x="72" y="148"><tspan fill="#fcd34d">repeat</tspan><tspan fill="#cbd5e1">(</tspan><tspan fill="#fcd34d">auto-fit</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#fcd34d">minmax</tspan><tspan fill="#cbd5e1">(16rem, 1fr));</tspan></text>
+    <text x="52" y="176"><tspan fill="#93c5fd">gap</tspan><tspan fill="#cbd5e1">: </tspan><tspan fill="#f9a8d4">1.5rem</tspan><tspan fill="#cbd5e1">;</tspan></text>
+    <text x="32" y="204" fill="#cbd5e1">}</text>
+    <text x="32" y="250"><tspan fill="#c4b5fd">@media</tspan><tspan fill="#cbd5e1"> (</tspan><tspan fill="#93c5fd">min-width</tspan><tspan fill="#cbd5e1">: </tspan><tspan fill="#f9a8d4">768px</tspan><tspan fill="#cbd5e1">) {</tspan></text>
+    <text x="52" y="278"><tspan fill="#67e8f9">.hero</tspan><tspan fill="#cbd5e1"> {</tspan></text>
+    <text x="72" y="306"><tspan fill="#93c5fd">grid-template-columns</tspan><tspan fill="#cbd5e1">:</tspan></text>
+    <text x="92" y="334"><tspan fill="#f9a8d4">2fr 3fr</tspan><tspan fill="#cbd5e1">;</tspan></text>
+    <text x="52" y="362" fill="#cbd5e1">}</text>
+    <text x="32" y="390" fill="#cbd5e1">}</text>
+    <text x="32" y="436" fill="#64748b">/* учусь по The Odin Project */</text>
+  </g>
+</svg>

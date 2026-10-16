@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Максим — начинающий веб-разработчик</title>
+  <meta name="description" content="Учебное портфолио Максима: адаптивные страницы и проекты на HTML, CSS и JavaScript по курсу The Odin Project.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Значки один раз описаны здесь, а дальше подставляются через <use> -->
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+    </symbol>
+    <symbol id="icon-open" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+    </symbol>
+  </svg>
+
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="portrait">
+        <img src="img/portrait.svg" alt="" width="400" height="560">
+        <h1 class="portrait-name">Максим</h1>
+      </div>
+
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title">Обо мне</h2>
+        <p>Привет! Я начинающий веб-разработчик. Учусь по курсу The Odin Project: прошёл основы, курсы HTML и CSS, разобрался с доступностью и адаптивной вёрсткой.</p>
+        <p>Верстаю страницы по макетам — так, чтобы они хорошо выглядели на любом экране и были удобны всем. Сейчас учусь переносить дизайн из Figma на сайт. Ниже — мои учебные проекты.</p>
+        <ul class="socials">
+          <li>
+            <a class="icon-link" href="https://github.com/MaksChakof" aria-label="Мой GitHub">
+              <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section class="work container" aria-labelledby="work-title">
+      <h2 id="work-title">Мои работы</h2>
+      <ul class="projects">
+        <li class="project">
+          <img src="img/admin-dashboard-640.jpg"
+               srcset="img/admin-dashboard-640.jpg 640w, img/admin-dashboard-1280.jpg 1280w"
+               sizes="(min-width: 1024px) 336px, (min-width: 640px) 50vw, 100vw"
+               width="640" height="400" loading="lazy"
+               alt="Панель управления: синее меню слева, шапка с поиском и сетка карточек проектов">
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Admin Dashboard</h3>
+              <a class="icon-link" href="https://github.com/MaksChakof/odin-admin-dashboard" aria-label="Код Admin Dashboard на GitHub">
+                <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+              </a>
+              <a class="icon-link" href="https://makschakof.github.io/odin-admin-dashboard/" aria-label="Открыть Admin Dashboard">
+                <svg class="icon" aria-hidden="true"><use href="#icon-open"></use></svg>
+              </a>
+            </div>
+            <p>Панель управления на CSS Grid: меню на всю высоту, карточки сами подстраиваются под ширину. Доступность — Lighthouse 100.</p>
+          </div>
+        </li>
+
+        <li class="project">
+          <img src="img/sign-up-form-640.jpg"
+               srcset="img/sign-up-form-640.jpg 640w, img/sign-up-form-1280.jpg 1280w"
+               sizes="(min-width: 1024px) 336px, (min-width: 640px) 50vw, 100vw"
+               width="640" height="400" loading="lazy"
+               alt="Форма регистрации: тёмно-зелёная панель с логотипом ODIN слева и поля формы справа">
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Sign-up Form</h3>
+              <a class="icon-link" href="https://github.com/MaksChakof/odin-sign-up-form" aria-label="Код Sign-up Form на GitHub">
+                <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+              </a>
+              <a class="icon-link" href="https://makschakof.github.io/odin-sign-up-form/" aria-label="Открыть Sign-up Form">
+                <svg class="icon" aria-hidden="true"><use href="#icon-open"></use></svg>
+              </a>
+            </div>
+            <p>Форма регистрации по макету: подписи к полям, проверка ввода средствами HTML и тёмная тема.</p>
+          </div>
+        </li>
+
+        <li class="project">
+          <img src="img/calculator-640.jpg"
+               srcset="img/calculator-640.jpg 640w, img/calculator-1280.jpg 1280w"
+               sizes="(min-width: 1024px) 336px, (min-width: 640px) 50vw, 100vw"
+               width="640" height="400" loading="lazy"
+               alt="Тёмный калькулятор, на экране пример 128 × 3">
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Calculator</h3>
+              <a class="icon-link" href="https://github.com/MaksChakof/odin-calculator" aria-label="Код Calculator на GitHub">
+                <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+              </a>
+              <a class="icon-link" href="https://makschakof.github.io/odin-calculator/" aria-label="Открыть Calculator">
+                <svg class="icon" aria-hidden="true"><use href="#icon-open"></use></svg>
+              </a>
+            </div>
+            <p>Калькулятор на JavaScript: цепочки операций, защита от деления на ноль, ввод с клавиатуры.</p>
+          </div>
+        </li>
+
+        <li class="project">
+          <img src="img/etch-a-sketch-640.jpg"
+               srcset="img/etch-a-sketch-640.jpg 640w, img/etch-a-sketch-1280.jpg 1280w"
+               sizes="(min-width: 1024px) 336px, (min-width: 640px) 50vw, 100vw"
+               width="640" height="400" loading="lazy"
+               alt="Поле 16 × 16 клеток с нарисованным радужным сердцем">
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Etch-a-Sketch</h3>
+              <a class="icon-link" href="https://github.com/MaksChakof/odin-etch-a-sketch" aria-label="Код Etch-a-Sketch на GitHub">
+                <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+              </a>
+              <a class="icon-link" href="https://makschakof.github.io/odin-etch-a-sketch/" aria-label="Открыть Etch-a-Sketch">
+                <svg class="icon" aria-hidden="true"><use href="#icon-open"></use></svg>
+              </a>
+            </div>
+            <p>Рисовалка на сетке из div: свой размер поля, режимы «радуга» и «затемнение».</p>
+          </div>
+        </li>
+
+        <li class="project">
+          <img src="img/rock-paper-scissors-640.jpg"
+               srcset="img/rock-paper-scissors-640.jpg 640w, img/rock-paper-scissors-1280.jpg 1280w"
+               sizes="(min-width: 1024px) 336px, (min-width: 640px) 50vw, 100vw"
+               width="640" height="400" loading="lazy"
+               alt="Игра «Камень, ножницы, бумага»: три кнопки хода и счёт раунда">
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Rock Paper Scissors</h3>
+              <a class="icon-link" href="https://github.com/MaksChakof/odin-rock-paper-scissors" aria-label="Код Rock Paper Scissors на GitHub">
+                <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+              </a>
+              <a class="icon-link" href="https://makschakof.github.io/odin-rock-paper-scissors/" aria-label="Открыть Rock Paper Scissors">
+                <svg class="icon" aria-hidden="true"><use href="#icon-open"></use></svg>
+              </a>
+            </div>
+            <p>Игра против компьютера до пяти побед: логика на JavaScript, интерфейс на событиях DOM.</p>
+          </div>
+        </li>
+
+        <li class="project">
+          <img src="img/landing-page-640.jpg"
+               srcset="img/landing-page-640.jpg 640w, img/landing-page-1280.jpg 1280w"
+               sizes="(min-width: 1024px) 336px, (min-width: 640px) 50vw, 100vw"
+               width="640" height="400" loading="lazy"
+               alt="Лендинг: тёмная шапка с крупным заголовком и кнопкой, ниже ряд карточек">
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Landing Page</h3>
+              <a class="icon-link" href="https://github.com/MaksChakof/odin-landing-page" aria-label="Код Landing Page на GitHub">
+                <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+              </a>
+              <a class="icon-link" href="https://makschakof.github.io/odin-landing-page/" aria-label="Открыть Landing Page">
+                <svg class="icon" aria-hidden="true"><use href="#icon-open"></use></svg>
+              </a>
+            </div>
+            <p>Первый лендинг по макету на Flexbox: шапка, карточки, цитата и призыв к действию.</p>
+          </div>
+        </li>
+      </ul>
+      <p class="more">Остальные проекты и упражнения — <a href="https://github.com/MaksChakof?tab=repositories">на моём GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer class="contact">
+    <div class="container contact-inner">
+      <div class="contact-text">
+        <h2>Связаться со мной</h2>
+        <p>Весь код моих проектов открыт: можно посмотреть, как всё устроено, и найти меня на GitHub.</p>
+        <a class="contact-link" href="https://github.com/MaksChakof">
+          <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+          github.com/MaksChakof
+        </a>
+      </div>
+      <img class="contact-img" src="img/admin-dashboard-640.jpg"
+           srcset="img/admin-dashboard-640.jpg 640w, img/admin-dashboard-1280.jpg 1280w"
+           sizes="(min-width: 1100px) 620px, (min-width: 768px) 60vw, 100vw"
+           width="640" height="400" loading="lazy" alt="">
+    </div>
+    <p class="copyright container">© 2026 Максим · проект Homepage из курса The Odin Project</p>
+  </footer>
+</body>
+</html>
